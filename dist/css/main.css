@@ -43,6 +43,15 @@ a:not([class]) {
 a {
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+  opacity: 0.5;
+}
+
+button:focus {
+  opacity: 0.5;
+  outline: none;
+}
 
 /* Make images easier to work with */
 img,
@@ -272,7 +281,6 @@ svg {
 }
 .nav__link {
   color: #fff;
-  font-weight: 500;
   font-size: 1.125rem;
   -webkit-transition: 100ms;
   transition: 100ms;
@@ -391,6 +399,13 @@ svg {
 }
 .hero__cta .btn-label {
   background-color: transparent;
+}
+.hero__image {
+  border: 1px solid red;
+}
+.hero__image img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 50em) {
