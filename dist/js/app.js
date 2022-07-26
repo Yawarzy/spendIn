@@ -15,3 +15,4 @@ const closeNav = function () {
 
 hamburger.addEventListener("click", openNav);
 closeNavBtn.addEventListener("click", closeNav);
+overlay.addEventListener("click", closeNav);
