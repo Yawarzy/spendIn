@@ -69,6 +69,12 @@
 
 .lead {
   font-size: $fs-200;
+  font-weight: $fw-regular;
+  color: $clr-secondary-300;
+}
+
+.section-header {
+  margin-bottom: 2em;
 }
 
 .fs-section-heading {
@@ -101,6 +107,8 @@
 
   .fs-section-heading {
     font-size: $fs-600;
+    margin-bottom: 0.75em;
+    margin-top: 0.375em;
   }
 
   .fs-section-sub-heading {
@@ -133,4 +141,29 @@
 
 .hidden {
   display: none;
+}
+
+section {
+  padding: 3em 0 2em;
+}
+
+@media (min-width: 50em) {
+  .section-header {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+
+  .fs-section-heading {
+    margin-bottom: 0.75em;
+    margin-bottom: 1.5em;
+  }
+
+  .fs-section-lead {
+    max-width: 56ch;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 7em 0;
+  }
 }

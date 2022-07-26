@@ -1,0 +1,64 @@
+@use "variables" as *;
+
+.benifit__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375em;
+}
+
+.benifit__item {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.benifit__icon {
+  padding: 0.375em;
+  border-radius: 0.375em;
+  font-size: $fs-300;
+}
+
+.benifit__image {
+  max-width: 30em;
+}
+
+.benifit__content {
+  flex-direction: column;
+  gap: 2em;
+  h4 {
+    font-size: $fs-300;
+    font-weight: $fw-semi-bold;
+    color: $clr-secondary-900;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: $fs-100;
+    font-weight: $fw-regular;
+    color: $clr-secondary-400;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width: 50em) {
+  .section-header {
+    text-align: center;
+  }
+
+  .benifit__content {
+    flex-direction: row;
+    gap: 5.9375em;
+    p {
+      font-size: $fs-300;
+    }
+
+    h4 {
+      font-size: $fs-500;
+    }
+  }
+
+  .benifit__icon {
+    font-size: $fs-500;
+  }
+}
