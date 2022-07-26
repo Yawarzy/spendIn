@@ -303,7 +303,7 @@ svg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 70%;
     height: calc(100vh - 5em);
     height: 100%;
     background-color: #e0e9f4;
@@ -317,8 +317,8 @@ svg {
     transition: -webkit-transform 300ms ease-in;
     transition: transform 300ms ease-in;
     transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
   }
   .nav__list li:not(.nav__list__header) {
     padding: 0.5em 1em;
@@ -392,16 +392,13 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .hero__cta button {
   width: 100%;
 }
 .hero__cta .btn-label {
   background-color: transparent;
-}
-.hero__image {
-  border: 1px solid red;
 }
 .hero__image img {
   width: 100%;
