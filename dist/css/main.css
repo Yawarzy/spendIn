@@ -367,9 +367,6 @@ svg {
     display: none;
   }
 }
-.hero {
-  min-height: calc(100vh - 5rem);
-}
 .hero__content {
   text-align: left;
   padding-top: 2.5em;
