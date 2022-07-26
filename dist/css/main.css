@@ -482,6 +482,10 @@ section {
 .benifit__image {
   max-width: 30em;
 }
+.benifit__image img {
+  max-width: 100%;
+  height: auto;
+}
 
 .benifit__content {
   -webkit-box-orient: vertical;
@@ -504,9 +508,6 @@ section {
 }
 
 @media (min-width: 50em) {
-  .section-header {
-    text-align: center;
-  }
   .benifit__content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

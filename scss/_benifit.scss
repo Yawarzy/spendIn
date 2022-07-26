@@ -21,6 +21,11 @@
 
 .benifit__image {
   max-width: 30em;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .benifit__content {
@@ -42,10 +47,6 @@
 }
 
 @media (min-width: 50em) {
-  .section-header {
-    text-align: center;
-  }
-
   .benifit__content {
     flex-direction: row;
     gap: 5.9375em;
