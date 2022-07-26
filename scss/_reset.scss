@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /* Box sizing rules */
 *,
 *::before,
@@ -23,9 +25,12 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  font-family: $ff-body;
+  font-weight: $fw-regular;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -33,6 +38,10 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */

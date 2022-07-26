@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+.hero {
+  min-height: calc(100vh - 5rem);
+
+  &__content {
+    text-align: left;
+    padding-top: 2.5em;
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin-bottom: 2em;
+    }
+  }
+
+  &__cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 4em;
+    button {
+      width: 100%;
+    }
+
+    .btn-label {
+      background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  .hero {
+    &__content {
+      padding-top: 5em;
+      text-align: center;
+    }
+
+    &__cta {
+      flex-direction: row;
+      button {
+        width: auto;
+      }
+      .btn-label {
+        margin: 0;
+      }
+    }
+  }
+}
