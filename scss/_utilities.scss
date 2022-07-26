@@ -1,0 +1,81 @@
+@use "variables" as *;
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary-100 {
+  color: $clr-primary-100;
+}
+.text-primary-500 {
+  color: $clr-primary-500;
+}
+
+.text-secondary-100 {
+  color: $clr-secondary-100;
+}
+.text-secondary-200 {
+  color: $clr-secondary-200;
+}
+.text-secondary-300 {
+  color: $clr-secondary-300;
+}
+.text-secondary-400 {
+  color: $clr-secondary-400;
+}
+.text-secondary-400 {
+  color: $clr-secondary-500;
+}
+.text-secondary-700 {
+  color: $clr-secondary-700;
+}
+.text-secondary-900 {
+  color: $clr-secondary-900;
+}
+
+.bg-primary-500 {
+  background-color: $clr-primary-500;
+}
+
+.bg-secondary-700 {
+  background-color: $clr-secondary-700;
+}
+
+.fw-regular {
+  font-weight: $fw-regular;
+}
+.fw-medium {
+  font-weight: $fw-medium;
+}
+.fw-semi-bold {
+  font-weight: $fw-semi-bold;
+}
+.fw-bold {
+  font-weight: $fw-bold;
+}
+
+.fs-primary-heading {
+  font-size: $fs-600;
+}
+
+.fs-section-heading {
+  font-size: $fs-500;
+}
+
+.fs-section-sub-heading {
+  font-size: $fs-200;
+}
+
+@media (min-width: 50em) {
+  .fs-primary-heading {
+    font-size: $fs-700;
+  }
+
+  .fs-section-heading {
+    font-size: $fs-600;
+  }
+
+  .fs-section-sub-heading {
+    font-size: $fs-400;
+  }
+}
