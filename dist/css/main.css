@@ -581,7 +581,8 @@ section {
 }
 .hiw__steps {
   padding: 1em 0.875em;
-  background-color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.01)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
   border-radius: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,8 +636,6 @@ section {
   }
   .hiw__steps {
     padding: 2em;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.01)));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
   }
   .hiw__steps li span {
     font-size: 1.125rem;
