@@ -10,7 +10,7 @@
   flex: 1;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1em;
+  gap: 2em;
 }
 
 .benifit__icon {
@@ -21,7 +21,6 @@
 
 .benifit__image {
   max-width: 30em;
-
   img {
     max-width: 100%;
     height: auto;
@@ -47,11 +46,20 @@
 }
 
 @media (min-width: 50em) {
+  .benifit {
+    .section-header {
+      text-align: center;
+    }
+  }
+
   .benifit__content {
+    justify-content: space-between;
     flex-direction: row;
     gap: 5.9375em;
+
     p {
       font-size: $fs-300;
+      max-width: 40ch;
     }
 
     h4 {

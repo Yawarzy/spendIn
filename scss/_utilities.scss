@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-primary-100 {
   color: $clr-primary-100;
 }
@@ -73,14 +77,27 @@
   color: $clr-secondary-300;
 }
 
+// SECTION HEADER
+
 .section-header {
   margin-bottom: 2em;
+
+  &--inverse {
+    .fs-section-heading {
+      color: #fff;
+    }
+    .fs-section-lead {
+      color: $clr-secondary-300;
+    }
+  }
 }
 
 .fs-section-heading {
   font-size: $fs-500;
   font-weight: $fw-bold;
   color: $clr-secondary-900;
+  margin-bottom: 0.75em;
+  margin-top: 0.375em;
 }
 
 .fs-section-sub-heading {
@@ -95,31 +112,6 @@
   color: $clr-secondary-400;
 }
 
-@media (min-width: 50em) {
-  .fs-primary-heading {
-    font-size: $fs-650;
-    font-weight: $fw-bold;
-  }
-
-  .lead {
-    font-size: $fs-500;
-  }
-
-  .fs-section-heading {
-    font-size: $fs-600;
-    margin-bottom: 0.75em;
-    margin-top: 0.375em;
-  }
-
-  .fs-section-sub-heading {
-    font-size: $fs-400;
-  }
-
-  .fs-section-lead {
-    font-size: $fs-400;
-  }
-}
-
 // Layout
 .container {
   max-width: 90%;
@@ -128,6 +120,14 @@
 
 .d-flex {
   display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.col-mb {
+  flex-direction: column-reverse;
 }
 
 .overlay {
@@ -149,21 +149,39 @@ section {
 
 @media (min-width: 50em) {
   .section-header {
-    text-align: center;
     margin-bottom: 4em;
   }
 
+  .fs-primary-heading {
+    font-size: $fs-650;
+    font-weight: $fw-bold;
+  }
+
+  .lead {
+    font-size: $fs-500;
+  }
+
   .fs-section-heading {
-    margin-bottom: 0.75em;
-    margin-bottom: 1.5em;
+    font-size: $fs-600;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .fs-section-sub-heading {
+    font-size: $fs-400;
   }
 
   .fs-section-lead {
+    font-size: $fs-400;
     max-width: 56ch;
     margin: 0 auto;
   }
 
   section {
     padding: 7em 0;
+  }
+
+  .col-mb {
+    flex-direction: row;
   }
 }
