@@ -697,6 +697,8 @@ section {
 .success__image img {
   max-width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .success__tab h4 {
   margin-bottom: 1.5rem;
@@ -752,5 +754,61 @@ section {
   }
   .success__list li span:not(.material-icons-outlined) {
     font-size: 1.125rem;
+  }
+}
+.testimonials .slider {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.testimonials .card {
+  padding: 1.5em 1.25em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5em;
+}
+.testimonials .card:last-child {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.01)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+}
+.testimonials .card > .text-secondary-100 {
+  margin-top: 1rem;
+  margin-bottom: 2.125rem;
+}
+.testimonials .card .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #90a3bf;
+  opacity: 0.2;
+  margin-bottom: 2rem;
+}
+.testimonials .card__footer {
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+.testimonials .card__image {
+  border: 1px solid red;
+}
+.testimonials .card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 50em) {
+  .testimonials .slider {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.5rem;
+  }
+  .testimonials .section-header {
+    text-align: center;
+  }
+  .testimonials .fs-section-lead {
+    max-width: 40ch;
   }
 }
