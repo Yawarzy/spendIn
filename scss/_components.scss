@@ -12,7 +12,11 @@
   transition: 200ms;
 
   &:hover {
-    opacity: 0.9;
+    // opacity: 0.9;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -20,6 +24,12 @@
   @include btn;
   background: $clr-primary-500;
   color: #fff;
+}
+
+.btn-secondary {
+  @include btn;
+  background: $clr-secondary-100;
+  color: $clr-secondary-300;
 }
 
 .btn-label {

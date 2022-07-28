@@ -3,14 +3,14 @@
 .benifit__list {
   display: flex;
   flex-direction: column;
-  gap: 0.9375em;
+  gap: 0.9375rem;
 }
 
 .benifit__item {
   flex: 1;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 2em;
+  gap: 1rem;
 }
 
 .benifit__icon {
@@ -29,7 +29,7 @@
 
 .benifit__content {
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   h4 {
     font-size: $fs-300;
     font-weight: $fw-semi-bold;
@@ -50,12 +50,16 @@
     .section-header {
       text-align: center;
     }
+
+    &__item {
+      gap: 2rem;
+    }
   }
 
   .benifit__content {
     justify-content: space-between;
     flex-direction: row;
-    gap: 5.9375em;
+    gap: 5.9375rem;
 
     p {
       font-size: $fs-300;

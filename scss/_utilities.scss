@@ -80,11 +80,12 @@
 // SECTION HEADER
 
 .section-header {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 
   &--inverse {
     .fs-section-heading {
       color: #fff;
+      font-family: $ff-heading;
     }
     .fs-section-lead {
       color: $clr-secondary-300;
@@ -95,9 +96,10 @@
 .fs-section-heading {
   font-size: $fs-500;
   font-weight: $fw-bold;
+  font-family: $ff-heading;
   color: $clr-secondary-900;
-  margin-bottom: 0.75em;
-  margin-top: 0.375em;
+  margin-bottom: 0.75rem;
+  margin-top: 0.375rem;
 }
 
 .fs-section-sub-heading {
@@ -149,7 +151,7 @@ section {
 
 @media (min-width: 50em) {
   .section-header {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 
   .fs-primary-heading {
@@ -178,7 +180,7 @@ section {
   }
 
   section {
-    padding: 7em 0;
+    padding: 5em 0;
   }
 
   .col-mb {

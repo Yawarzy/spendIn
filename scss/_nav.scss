@@ -2,7 +2,7 @@
 
 .nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  min-height: 6.25em;
+  min-height: 6.25rem;
 
   .container {
     min-height: inherit;
@@ -17,7 +17,7 @@
   }
 
   &__list {
-    gap: 2em;
+    gap: 2rem;
 
     &__header {
       display: none;
@@ -40,7 +40,7 @@
 
 @media (max-width: 50em) {
   .nav {
-    min-height: 5em;
+    min-height: 5rem;
     .logo {
       font-size: $fs-400;
     }
@@ -50,7 +50,7 @@
       top: 0;
       left: 0;
       width: 70%;
-      height: calc(100vh - 5em);
+      height: calc(100vh - 5rem);
       height: 100%;
       background-color: $clr-secondary-100;
       flex-direction: column;
@@ -69,7 +69,7 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid $clr-secondary-200;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5rem;
         span {
           font-size: $fs-500;
         }

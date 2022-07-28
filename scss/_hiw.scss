@@ -2,14 +2,14 @@
 
 .hiw {
   .section-header {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 
   .container.d-grid {
     grid-template-areas:
       "hiw__content"
       "hiw__image";
-    gap: 2em;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -39,8 +39,8 @@
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
-    gap: 3.1875em;
-    max-width: 32.875rem;
+    gap: 3.1875rem;
+    max-width: 32.875em;
 
     li {
       color: #fff;
@@ -62,7 +62,7 @@
       border-radius: 100%;
       background: $clr-primary-500;
       color: #fff;
-      margin-right: 0.75em;
+      margin-right: 0.75rem;
     }
   }
 }
