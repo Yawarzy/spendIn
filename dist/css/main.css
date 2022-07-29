@@ -178,7 +178,7 @@ svg {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .section-header--inverse .fs-section-lead {
-  color: #90a3bf;
+  color: #596780;
 }
 
 .fs-section-heading {
@@ -199,7 +199,7 @@ svg {
 .fs-section-lead {
   font-size: 0.875rem;
   font-weight: 400;
-  color: #596780;
+  color: #90a3bf;
 }
 
 .container {
@@ -262,11 +262,13 @@ section {
   }
   .fs-section-lead {
     font-size: 1.125rem;
+  }
+  .fs-section-lead--center {
     max-width: 56ch;
     margin: 0 auto;
   }
   section {
-    padding: 5em 0;
+    padding: 5rem 0;
   }
   .col-mb {
     -webkit-box-orient: horizontal;
@@ -327,6 +329,17 @@ section {
 }
 .btn-label:focus {
   outline: none;
+}
+
+.label-primary-100 {
+  display: inline-block;
+  border: 0;
+  border-radius: 1.875em;
+  padding: 0.25em 0.75rem;
+  background-color: hsl(257deg, 94%, 93%);
+  color: #0d121f;
+  font-weight: 500;
+  font-size: 0.875rem;
 }
 
 .nav {
@@ -832,4 +845,58 @@ section {
   .testimonials .fs-section-lead {
     max-width: 40ch;
   }
+}
+.pricing__toggler div.d-flex:first-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pricing .toggler {
+  width: 4.375em;
+  height: 2.25em;
+  border-radius: 1.875em;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.25rem;
+  cursor: pointer;
+  background-color: #c3d4e9;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+  margin: 0 1rem;
+}
+.pricing .toggler.yearly {
+  background: hsl(252deg, 96%, 67%);
+}
+.pricing .toggler.yearly .circle {
+  margin-left: calc(100% - 1.75em);
+}
+.pricing .circle {
+  width: 1.75em;
+  height: 1.75em;
+  margin-left: 0.25em;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-transition: margin 300ms ease;
+  transition: margin 300ms ease;
+}
+.pricing .label-primary-100 {
+  margin-top: 1.5rem;
+}
+.pricing__label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pricing__arrow {
+  height: 5em;
+  width: 5em;
+  background: url("../images/arrow.svg") no-repeat center center/cover;
 }

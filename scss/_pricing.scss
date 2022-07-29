@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.pricing {
+  &__toggler {
+    div.d-flex:first-child {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .toggler {
+    width: 4.375em;
+    height: 2.25em;
+    border-radius: 1.875em;
+    display: grid;
+    align-items: center;
+    padding-right: 0.25rem;
+    cursor: pointer;
+    background-color: $clr-secondary-200;
+    transition: background 300ms ease;
+    margin: 0 1rem;
+    &.yearly {
+      background: $clr-primary-500;
+      .circle {
+        margin-left: calc(100% - 1.75em);
+      }
+    }
+  }
+
+  .circle {
+    width: 1.75em;
+    height: 1.75em;
+    margin-left: 0.25em;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: margin 300ms ease;
+  }
+
+  .label-primary-100 {
+    margin-top: 1.5rem;
+  }
+
+  &__label {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__arrow {
+    height: 5em;
+    width: 5em;
+    background: url("../images/arrow.svg") no-repeat center center/cover;
+  }
+}
+
+@media (min-width: 50em) {
+  .pricing {
+  }
+}

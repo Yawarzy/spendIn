@@ -39,3 +39,11 @@ tabBtns.forEach((btn) => {
     }
   });
 });
+
+// Pricing Toggler
+const togglerBtn = document.querySelector(".toggler");
+const togglerCircle = document.querySelector(".circle");
+
+togglerBtn.addEventListener("click", () => {
+  togglerBtn.classList.toggle("yearly");
+});

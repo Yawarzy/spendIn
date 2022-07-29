@@ -88,7 +88,7 @@
       font-family: $ff-heading;
     }
     .fs-section-lead {
-      color: $clr-secondary-300;
+      color: $clr-secondary-400;
     }
   }
 }
@@ -111,7 +111,7 @@
 .fs-section-lead {
   font-size: $fs-200;
   font-weight: $fw-regular;
-  color: $clr-secondary-400;
+  color: $clr-secondary-300;
 }
 
 // Layout
@@ -175,12 +175,15 @@ section {
 
   .fs-section-lead {
     font-size: $fs-400;
-    max-width: 56ch;
-    margin: 0 auto;
+
+    &--center {
+      max-width: 56ch;
+      margin: 0 auto;
+    }
   }
 
   section {
-    padding: 5em 0;
+    padding: 5rem 0;
   }
 
   .col-mb {

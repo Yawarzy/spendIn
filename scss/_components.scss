@@ -37,3 +37,18 @@
   background: transparent;
   color: $clr-secondary-400;
 }
+
+@mixin label {
+  display: inline-block;
+  border: 0;
+  border-radius: 1.875em;
+  padding: 0.25em 0.75rem;
+}
+
+.label-primary-100 {
+  @include label;
+  background-color: $clr-primary-100;
+  color: $clr-secondary-700;
+  font-weight: $fw-medium;
+  font-size: $fs-200;
+}
