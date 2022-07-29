@@ -203,7 +203,7 @@ svg {
 }
 
 .container {
-  max-width: 90%;
+  max-width: min(1140px, 90%);
   margin: 0 auto;
 }
 
