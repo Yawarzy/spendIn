@@ -126,7 +126,7 @@ svg {
   color: #596780;
 }
 
-.text-secondary-400 {
+.text-secondary-500 {
   color: #1a202c;
 }
 
@@ -142,12 +142,24 @@ svg {
   background-color: hsl(252deg, 96%, 67%);
 }
 
+.bg-secondary-400 {
+  background-color: #596780;
+}
+
 .bg-secondary-700 {
   background-color: #0d121f;
 }
 
 .bg-secondary-500 {
   background-color: #1a202c;
+}
+
+.bg-error-500 {
+  background-color: hsl(9deg, 100%, 57%);
+}
+
+.bg-success-500 {
+  background-color: hsl(79deg, 72%, 48%);
 }
 
 .fw-regular {
@@ -292,7 +304,7 @@ section {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 1em 1.75em;
+  padding: 0.7188em 1.75em;
   -webkit-transition: 200ms;
   transition: 200ms;
   background: hsl(252deg, 96%, 67%);
@@ -310,7 +322,7 @@ section {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 1em 1.75em;
+  padding: 0.7188em 1.75em;
   -webkit-transition: 200ms;
   transition: 200ms;
   background: #e0e9f4;
@@ -328,7 +340,7 @@ section {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 1em 1.75em;
+  padding: 0.7188em 1.75em;
   -webkit-transition: 200ms;
   transition: 200ms;
   background: transparent;
@@ -906,4 +918,117 @@ section {
   height: 5em;
   width: 5em;
   background: url("../images/arrow.svg") no-repeat center center/cover;
+}
+.pricing__cards {
+  margin-top: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.pricing__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: rgba(224, 233, 244, 0.5);
+  padding: 2em;
+  border-radius: 0.625em;
+}
+.pricing__card h4 {
+  font-size: 1.5rem;
+}
+.pricing__card > .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+.pricing__card > .d-flex .material-icons-outlined {
+  color: hsl(252deg, 96%, 67%);
+}
+.pricing__card p[class] {
+  font-size: 0.875rem;
+  color: #596780;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.pricing__card .price {
+  font-size: 2rem;
+}
+.pricing__card .duration {
+  font-size: 0.875rem;
+  color: #596780;
+}
+.pricing__card p {
+  margin-block: 1.5rem;
+}
+.pricing__card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+.pricing__card li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+.pricing__card li .material-icons-outlined {
+  display: inline-grid;
+  place-items: center;
+  font-size: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 100%;
+  color: #fff;
+}
+.pricing__card .btn-primary {
+  width: 100%;
+}
+
+@media (min-width: 50em) {
+  .pricing__cards {
+    margin-top: 1.3125rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.5rem;
+  }
+  .pricing__card h4 {
+    font-size: 2rem;
+  }
+  .pricing__card > .d-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.5rem;
+  }
+  .pricing__card > .d-flex .material-icons-outlined {
+    font-size: 2rem;
+    color: hsl(252deg, 96%, 67%);
+  }
+  .pricing__card p[class] {
+    font-size: 1rem;
+  }
+  .pricing__card .price {
+    font-size: 2.25rem;
+  }
+  .pricing__card .duration {
+    font-size: 1.125rem;
+  }
+  .pricing__card li span:not(.material-icons-outlined) {
+    font-size: 1.125rem;
+  }
 }

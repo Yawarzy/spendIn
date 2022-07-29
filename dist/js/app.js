@@ -43,7 +43,24 @@ tabBtns.forEach((btn) => {
 // Pricing Toggler
 const togglerBtn = document.querySelector(".toggler");
 const togglerCircle = document.querySelector(".circle");
+const duration = document.querySelectorAll(".duration");
+const price = document.querySelectorAll(".price-monthly");
+
+const priceYearly = ["$52", "$139"];
+const priceMonthly = ["$12", "$33"];
 
 togglerBtn.addEventListener("click", () => {
   togglerBtn.classList.toggle("yearly");
+
+  if (togglerBtn.classList.contains("yearly")) {
+    duration.forEach((dur, index) => {
+      dur.textContent = "/year";
+      price[index].textContent = priceYearly[index];
+    });
+  } else {
+    duration.forEach((dur, index) => {
+      dur.textContent = "/month";
+      price[index].textContent = priceMonthly[index];
+    });
+  }
 });

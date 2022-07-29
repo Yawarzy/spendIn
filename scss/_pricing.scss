@@ -50,9 +50,122 @@
     width: 5em;
     background: url("../images/arrow.svg") no-repeat center center/cover;
   }
+
+  &__cards {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__card {
+    flex: 1;
+    background-color: rgba(224, 233, 244, 0.5);
+    padding: 2em;
+    border-radius: 0.625em;
+
+    h4 {
+      font-size: $fs-500;
+    }
+
+    & > .d-flex {
+      align-items: center;
+      gap: 0.5rem;
+
+      .material-icons-outlined {
+        color: $clr-primary-500;
+      }
+    }
+
+    p[class] {
+      font-size: $fs-200;
+      color: $clr-secondary-400;
+      margin-top: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .price {
+      font-size: 2rem;
+    }
+
+    .duration {
+      font-size: 0.875rem;
+      color: $clr-secondary-400;
+    }
+
+    p {
+      margin-block: 1.5rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.125rem;
+      margin-bottom: 2.5rem;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: $fs-200;
+
+      .material-icons-outlined {
+        display: inline-grid;
+        place-items: center;
+        font-size: 1rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 100%;
+        color: #fff;
+      }
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 50em) {
   .pricing {
+    &__cards {
+      margin-top: 1.3125rem;
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    &__card {
+      h4 {
+        font-size: 2rem;
+      }
+
+      & > .d-flex {
+        align-items: center;
+        gap: 0.5rem;
+
+        .material-icons-outlined {
+          font-size: 2rem;
+          color: $clr-primary-500;
+        }
+      }
+
+      p[class] {
+        font-size: $fs-300;
+      }
+
+      .price {
+        font-size: $fs-600;
+      }
+
+      .duration {
+        font-size: 1.125rem;
+      }
+
+      li {
+        span:not(.material-icons-outlined) {
+          font-size: 1.125rem;
+        }
+      }
+    }
   }
 }
