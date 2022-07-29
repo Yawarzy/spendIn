@@ -156,6 +156,7 @@ section {
 
   .fs-primary-heading {
     font-size: $fs-650;
+    font-size: clamp($fs-600, 4vw + 0.75rem, $fs-650);
     font-weight: $fw-bold;
   }
 
