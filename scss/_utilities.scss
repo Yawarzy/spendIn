@@ -161,7 +161,7 @@ section {
 
   .lead {
     font-size: $fs-500;
-    font-size: clamp($fs-500, 2vw + 0.1rem, $fs-500);
+    font-size: clamp($fs-200, 2vw + 0.1rem, $fs-500);
   }
 
   .fs-section-heading {
