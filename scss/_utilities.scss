@@ -67,7 +67,8 @@
 }
 
 .fs-primary-heading {
-  font-size: $fs-600;
+  // font-size: $fs-600;
+  font-size: clamp($fs-600, 8vw + 1rem, $fs-650);
   font-weight: $fw-bold;
 }
 
@@ -155,7 +156,8 @@ section {
   }
 
   .fs-primary-heading {
-    font-size: $fs-650;
+    // font-size: $fs-650;
+    // font-size: c;
     font-weight: $fw-bold;
   }
 
