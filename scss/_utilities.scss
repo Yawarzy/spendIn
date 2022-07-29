@@ -155,13 +155,13 @@ section {
   }
 
   .fs-primary-heading {
-    font-size: $fs-650;
     font-size: clamp($fs-600, 4vw + 0.75rem, $fs-650);
     font-weight: $fw-bold;
   }
 
   .lead {
     font-size: $fs-500;
+    font-size: clamp($fs-500, 2vw + 0.1rem, $fs-500);
   }
 
   .fs-section-heading {
