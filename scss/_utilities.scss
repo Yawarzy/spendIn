@@ -67,12 +67,14 @@
 }
 
 .fs-primary-heading {
-  font-size: $fs-600;
+  // font-size: $fs-600;
+  font-size: clamp($fs-600, 4vw + 0.1rem, $fs-700);
   font-weight: $fw-bold;
 }
 
 .lead {
-  font-size: $fs-200;
+  // font-size: $fs-200;
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 2.25rem);
   font-weight: $fw-regular;
   color: $clr-secondary-300;
 }
@@ -94,7 +96,9 @@
 }
 
 .fs-section-heading {
-  font-size: $fs-500;
+  // font-size: $fs-500;
+  font-size: clamp($fs-500, 2vw + 1rem, $fs-600);
+
   font-weight: $fw-bold;
   font-family: $ff-heading;
   color: $clr-secondary-900;
@@ -103,13 +107,17 @@
 }
 
 .fs-section-sub-heading {
-  font-size: $fs-100;
+  // font-size: $fs-100;
+
+  font-size: clamp($fs-100, 1vw + 0.175rem, $fs-400);
+
   font-weight: $fw-semi-bold;
   color: $clr-primary-500;
 }
 
 .fs-section-lead {
-  font-size: $fs-200;
+  // font-size: $fs-200;
+  font-size: clamp($fs-200, 1vw + 0.25rem, $fs-400);
   font-weight: $fw-regular;
   color: $clr-secondary-400;
 }
@@ -155,27 +163,26 @@ section {
   }
 
   .fs-primary-heading {
-    font-size: clamp($fs-600, 4vw + 0.75rem, $fs-650);
+    // font-size: $fs-650;
     font-weight: $fw-bold;
   }
 
   .lead {
-    font-size: $fs-500;
-    font-size: clamp($fs-200, 2vw + 0.1rem, $fs-500);
+    // font-size: $fs-500;
   }
 
   .fs-section-heading {
-    font-size: $fs-600;
+    // font-size: $fs-600;
     margin-top: 0.75rem;
     margin-bottom: 1.5rem;
   }
 
   .fs-section-sub-heading {
-    font-size: $fs-400;
+    // font-size: $fs-400;
   }
 
   .fs-section-lead {
-    font-size: $fs-400;
+    // font-size: $fs-400;
     max-width: 56ch;
     margin: 0 auto;
   }
