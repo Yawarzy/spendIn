@@ -55,12 +55,22 @@ togglerBtn.addEventListener("click", () => {
   if (togglerBtn.classList.contains("yearly")) {
     duration.forEach((dur, index) => {
       dur.textContent = "/year";
-      price[index].textContent = priceYearly[index];
+      if (index < 2) price[index].textContent = priceYearly[index];
     });
   } else {
     duration.forEach((dur, index) => {
       dur.textContent = "/month";
-      price[index].textContent = priceMonthly[index];
+      if (index < 2) price[index].textContent = priceMonthly[index];
     });
   }
+});
+
+// Cta margin fix
+const container = document.querySelector(".container");
+const ctaHeader = document.querySelector(".cta .d-grid");
+
+window.addEventListener("resize", () => {
+  ctaHeader.style.paddingLeft = `${
+    window.getComputedStyle(container).marginLeft
+  }`;
 });

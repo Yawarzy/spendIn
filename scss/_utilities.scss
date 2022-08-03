@@ -128,6 +128,11 @@
   color: $clr-secondary-300;
 }
 
+// Margins
+.mt-2 {
+  margin-top: 2rem;
+}
+
 // Layout
 .container {
   max-width: min(1140px, 90%);
@@ -140,6 +145,9 @@
 
 .d-grid {
   display: grid;
+}
+
+.even-columns-2 {
 }
 
 .col-mb {
@@ -202,5 +210,11 @@ section {
 
   .col-mb {
     flex-direction: row;
+  }
+
+  .even-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
   }
 }

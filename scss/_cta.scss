@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.cta {
+  padding-bottom: 0;
+
+  .d-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .cta {
+    .d-grid {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    &__img {
+      grid-column-start: 7;
+      grid-column-end: 13;
+    }
+
+    .section-header {
+      grid-column-start: 1;
+      grid-column-end: 7;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
