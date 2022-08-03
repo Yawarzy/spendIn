@@ -2,6 +2,7 @@
 const hamburger = document.querySelector(".hamburger");
 const closeNavBtn = document.querySelector(".close-nav");
 const navList = document.querySelector(".nav__list");
+const navLinks = document.querySelectorAll(".nav__link");
 const overlay = document.querySelector(".overlay");
 
 const openNav = function () {
@@ -16,6 +17,9 @@ const closeNav = function () {
 hamburger.addEventListener("click", openNav);
 closeNavBtn.addEventListener("click", closeNav);
 overlay.addEventListener("click", closeNav);
+navLinks.forEach((link) => {
+  link.addEventListener("click", closeNav);
+});
 
 // ################### Success Tabs
 const tabBtns = document.querySelectorAll(".tab-btn");
