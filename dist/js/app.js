@@ -32,10 +32,10 @@ tabBtns.forEach((btn) => {
     e.target.classList.add("btn-primary");
     if (e.target.classList.contains("positive")) {
       tabs[1].classList.add("hidden");
-      tabImage.src = "./images/Success Stories-sucess.png";
+      tabImage.src = "./images/Success Stories-sucess.webp";
     } else if (e.target.classList.contains("negative")) {
       tabs[0].classList.add("hidden");
-      tabImage.src = "./images/Success Stories-error.png";
+      tabImage.src = "./images/Success Stories-error.webp";
     }
   });
 });

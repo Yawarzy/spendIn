@@ -1150,6 +1150,7 @@ section {
   }
   .footer__logo p {
     margin-top: 2rem;
+    padding-right: 0;
   }
   .footer ul.footer__product {
     grid-column: 5/7;
