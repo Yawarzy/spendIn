@@ -19,8 +19,8 @@
     }
 
     p {
-      max-width: 15ch;
       margin-top: 0.8125rem;
+      padding-right: 5em;
     }
 
     margin-bottom: 1rem;
@@ -52,7 +52,7 @@
 
   &__nav__link {
     color: $clr-secondary-400;
-    font-size: 1rem;
+    font-size: $fs-200;
   }
 
   &__privacy {
@@ -103,6 +103,11 @@
         grid-column: 11 / 13;
       }
     }
+
+    &__nav__link {
+      font-size: $fs-300;
+    }
+
     &__privacy {
       flex-direction: row;
       justify-content: space-between;

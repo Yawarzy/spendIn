@@ -1097,8 +1097,8 @@ section {
   font-size: 1.5rem;
 }
 .footer__logo p {
-  max-width: 15ch;
   margin-top: 0.8125rem;
+  padding-right: 5em;
 }
 .footer ul h5 {
   font-size: 1.25rem;
@@ -1117,7 +1117,7 @@ section {
 }
 .footer__nav__link {
   color: #596780;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 .footer__privacy {
   padding-top: 2em;
@@ -1162,6 +1162,9 @@ section {
   }
   .footer ul.footer__social {
     grid-column: 11/13;
+  }
+  .footer__nav__link {
+    font-size: 1rem;
   }
   .footer__privacy {
     -webkit-box-orient: horizontal;
