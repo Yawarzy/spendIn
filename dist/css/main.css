@@ -427,7 +427,6 @@ section {
     top: 0;
     left: 0;
     width: 70%;
-    height: calc(100vh - 5rem);
     height: 100%;
     background-color: #e0e9f4;
     -webkit-box-orient: vertical;
@@ -451,6 +450,7 @@ section {
     display: -ms-flexbox;
     display: flex;
     padding: 1em;
+    min-height: 5rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
