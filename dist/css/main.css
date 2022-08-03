@@ -1077,3 +1077,108 @@ section {
     margin: 0;
   }
 }
+.footer {
+  padding: 2em 0;
+}
+.footer .d-grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-auto-columns: 1fr;
+  row-gap: 2rem;
+  border-bottom: 1px solid rgba(156, 129, 253, 0.25);
+  padding-bottom: 4em;
+}
+.footer__logo {
+  grid-column: 1/5;
+  margin-bottom: 1rem;
+}
+.footer__logo .logo {
+  font-size: 1.5rem;
+}
+.footer__logo p {
+  max-width: 15ch;
+  margin-top: 0.8125rem;
+}
+.footer ul h5 {
+  font-size: 1.25rem;
+}
+.footer ul li {
+  margin-top: 2rem;
+}
+.footer ul a:hover {
+  opacity: 0.8;
+}
+.footer ul.footer__product, .footer ul.footer__resources {
+  grid-column: 1/3;
+}
+.footer ul.footer__company, .footer ul.footer__social {
+  grid-column: 3/5;
+}
+.footer__nav__link {
+  color: #596780;
+  font-size: 1rem;
+}
+.footer__privacy {
+  padding-top: 2em;
+  gap: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__privacy .d-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.footer__privacy a:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 50em) {
+  .footer {
+    padding: 7.5em 0 4em;
+  }
+  .footer .d-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .footer__logo {
+    grid-column: 1/3;
+  }
+  .footer__logo p {
+    margin-top: 2rem;
+  }
+  .footer ul.footer__product {
+    grid-column: 5/7;
+  }
+  .footer ul.footer__company {
+    grid-column: 7/9;
+  }
+  .footer ul.footer__resources {
+    grid-column: 9/11;
+  }
+  .footer ul.footer__social {
+    grid-column: 11/13;
+  }
+  .footer__privacy {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__privacy .d-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}

@@ -1,4 +1,4 @@
-// Mobile Navigation
+// ################ Mobile Navigation
 const hamburger = document.querySelector(".hamburger");
 const closeNavBtn = document.querySelector(".close-nav");
 const navList = document.querySelector(".nav__list");
@@ -17,7 +17,7 @@ hamburger.addEventListener("click", openNav);
 closeNavBtn.addEventListener("click", closeNav);
 overlay.addEventListener("click", closeNav);
 
-// Success Tabs
+// ################### Success Tabs
 const tabBtns = document.querySelectorAll(".tab-btn");
 const tabs = document.querySelectorAll(".success__tab");
 const tabImage = document.querySelector(".success__image img");
@@ -40,7 +40,7 @@ tabBtns.forEach((btn) => {
   });
 });
 
-// Pricing Toggler
+// ######################### Pricing Toggler
 const togglerBtn = document.querySelector(".toggler");
 const togglerCircle = document.querySelector(".circle");
 const duration = document.querySelectorAll(".duration");
@@ -65,10 +65,16 @@ togglerBtn.addEventListener("click", () => {
   }
 });
 
-// Cta margin fix
+// #################### Cta margin fix
 const container = document.querySelector(".container");
 const ctaHeader = document.querySelector(".cta .d-grid");
 
+// Initial set
+ctaHeader.style.paddingLeft = `${
+  window.getComputedStyle(container).marginLeft
+}`;
+
+// Set on window resize
 window.addEventListener("resize", () => {
   ctaHeader.style.paddingLeft = `${
     window.getComputedStyle(container).marginLeft
