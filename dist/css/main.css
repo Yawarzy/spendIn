@@ -381,6 +381,26 @@ section {
 .nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   min-height: 6.25rem;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+.nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.nav.sticky .logo {
+  color: hsl(252deg, 96%, 67%);
+}
+.nav.sticky .nav__link {
+  color: #596780;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+.nav.sticky .nav__link:hover {
+  color: #1a202c;
 }
 .nav .container {
   min-height: inherit;
@@ -423,7 +443,7 @@ section {
     font-size: 1.125rem;
   }
   .nav__list {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 70%;
@@ -434,7 +454,7 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0;
-    z-index: 5;
+    z-index: 100;
     -webkit-transition: -webkit-transform 300ms ease-in;
     transition: -webkit-transform 300ms ease-in;
     transition: transform 300ms ease-in;

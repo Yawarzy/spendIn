@@ -3,6 +3,27 @@
 .nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   min-height: 6.25rem;
+  transition: all 500ms;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    .logo {
+      color: $clr-primary-500;
+    }
+
+    .nav__link {
+      color: $clr-secondary-400;
+      transition: color 300ms;
+      &:hover {
+        color: $clr-secondary-500;
+      }
+    }
+  }
 
   .container {
     min-height: inherit;
@@ -46,7 +67,7 @@
     }
 
     &__list {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 70%;
@@ -54,7 +75,7 @@
       background-color: $clr-secondary-100;
       flex-direction: column;
       gap: 0;
-      z-index: 5;
+      z-index: 100;
       transition: transform 300ms ease-in;
       transform: translateX(-110%);
 

@@ -1,4 +1,5 @@
 // ################ Mobile Navigation
+const nav = document.querySelector("#nav");
 const hamburger = document.querySelector(".hamburger");
 const closeNavBtn = document.querySelector(".close-nav");
 const navList = document.querySelector(".nav__list");
@@ -43,6 +44,28 @@ tabBtns.forEach((btn) => {
     }
   });
 });
+
+// ######################### Sticky Nav
+const hero = document.querySelector("#hero");
+
+const heroObserver = new IntersectionObserver(
+  (entries) => {
+    const [entry] = entries;
+
+    if (entry.isIntersecting != true) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${nav.clientHeight}px`,
+  }
+);
+
+heroObserver.observe(hero);
 
 // ######################### Pricing Toggler
 const togglerBtn = document.querySelector(".toggler");
