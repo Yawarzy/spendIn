@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 50em) {
   .cta {
     .d-grid {
       grid-template-columns: repeat(12, 1fr);

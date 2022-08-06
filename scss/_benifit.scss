@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 50em) {
   .benifit {
     .section-header {
       text-align: center;

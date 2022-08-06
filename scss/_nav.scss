@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 50em) {
+@media only screen and (max-width: 50em) {
   .nav {
     min-height: 5rem;
     .logo {

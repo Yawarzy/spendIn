@@ -126,7 +126,7 @@
   }
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 50em) {
   .pricing {
     &__cards {
       margin-top: 1.3125rem;

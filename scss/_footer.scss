@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 50em) {
   .footer {
     padding: 7.5em 0 4em;
 

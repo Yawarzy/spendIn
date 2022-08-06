@@ -171,7 +171,7 @@ section {
   padding: 3em 0 2em;
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 50em) {
   .section-header {
     margin-bottom: 4rem;
   }

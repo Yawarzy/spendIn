@@ -42,7 +42,7 @@ $fs-600: 2.25rem; // 36px
 $fs-650: 3.5rem; // 56px
 $fs-700: 4.5rem; // 72px
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 50em) {
   $fs-400: 1.25rem; // 20px
   $fs-500: 2rem; // 36px
   $fs-600: 2.5rem; // 40px
